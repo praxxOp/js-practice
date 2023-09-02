@@ -15,6 +15,10 @@ let c = [1, 2, 3, 4, 5];
 let d = [...c];
 /* to copy all value of array or object  we use spread [...] operators in js */
 d.push(13);
+d.pop()
+d.unshift(12)
+d.shift()
+d.splice(2,3)
 
 let e = {
   name: "praxx",
@@ -42,6 +46,8 @@ var g = 30;
 /* Hoisting with var:
 var variables are hoisted and initialized with undefined, making them accessible before declaration,
  whereas let and const variables are hoisted but not initialized, leading to ReferenceErrors if accessed before declaration.
-*/
+*/ 
+
+/* conditions in js */
 
 

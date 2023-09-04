@@ -7,7 +7,7 @@ let b = a;
 b = 12;
 console.log(b);
 
-/* In primitives we can directly copy the vale of another variable */
+/* In primitives we can directly copy the value of another variable */
 
 /*references */
 
@@ -49,5 +49,51 @@ var variables are hoisted and initialized with undefined, making them accessible
 */ 
 
 /* conditions in js */
+/*to check single condition*/
+if(a<b){
+console.log("done")
+}
+else{
+    console.log ("not done")
+}
 
+/* to check multiple condition */
 
+if (a>b){
+console.log("greater")
+}
+else if (a<b){
+    console.log("smaller")
+}
+else{
+    console.log("nothing")
+}
+
+// or operator
+
+let isRaining = true;
+let isSunny = false;
+
+if (isRaining || isSunny) {
+  console.log("You might need an umbrella or sunscreen!");
+} else {
+  console.log("The weather is neither rainy nor sunny.");
+}
+
+// ternary operators
+let A = 10
+let B =  12
+a>B?console.log("okay"): console.log("not okay")
+
+// promt
+var praxx2= Number(prompt("enter the number"))
+if (praxx2%2===1){
+console.log("odd")
+}
+else{
+    console.log ("even")
+}
+
+for(i=1; i=5;i++){
+console.log("praxx")
+}

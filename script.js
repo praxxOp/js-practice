@@ -86,14 +86,45 @@ let B =  12
 a>B?console.log("okay"): console.log("not okay")
 
 // promt
-var praxx2= Number(prompt("enter the number"))
-if (praxx2%2===1){
-console.log("odd")
-}
-else{
-    console.log ("even")
-}
+// var praxx2= Number(prompt("enter the number"))
+// if (praxx2%2===1){
+// console.log("odd")
+// }
+// else{
+//     console.log ("even")
+// }
 
-for(i=1; i=5;i++){
+for(i=1 ; i<=5;i++){
 console.log("praxx")
 }
+
+
+
+
+
+let k = [1, 2, 3, 4, 5, 6];
+let currentIndex = 0;
+
+document.querySelector("button").addEventListener("click", function() {
+  if (currentIndex < k.length) {
+    let val = k[currentIndex];
+    let z = val + 2;
+    console.log(z);
+    currentIndex++;
+  }
+});
+
+
+
+
+// to find currentindex in array
+//In JavaScript, when working with loops like for and forEach, as well as the Array.prototype.map() method,
+//the second parameter in the callback function serves as the index of the current element being processed. 
+//This index parameter allows you to access and manipulate both the elements themselves and
+//their corresponding positions within an array during iteration or mapping operations.
+// example:-
+
+    const array = [1, 2, 3, 4, 5];
+    array.forEach((element, index) => {
+    console.log(`Element at index ${index} is ${element}`);
+    });

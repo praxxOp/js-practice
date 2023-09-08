@@ -116,6 +116,10 @@ document.querySelector("button").addEventListener("click", function() {
 
 
 
+while(a<=20){
+let add= a++
+console.log(add)
+}
 
 // to find currentindex in array
 //In JavaScript, when working with loops like for and forEach, as well as the Array.prototype.map() method,
@@ -125,11 +129,13 @@ document.querySelector("button").addEventListener("click", function() {
 // example:-
 
     const array = [1, 2, 3, 4, 5];
-    array.forEach((element, index) => {
-    console.log(`Element at index ${index} is ${element}`);
+   const hi=  array.forEach((element, index) => {
+    return (`Element at index ${index} is ${element}`);
     });
+   console.log(hi)
 
-
-    // while(a<=20){
-    //   console.log("a is smaller")
-    // }
+    const hii=  array.map((element, index) => {
+      return (`Element at index ${index} is ${element}`)
+       ;
+      });
+  console.log(hii)

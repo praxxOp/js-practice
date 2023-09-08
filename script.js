@@ -128,3 +128,8 @@ document.querySelector("button").addEventListener("click", function() {
     array.forEach((element, index) => {
     console.log(`Element at index ${index} is ${element}`);
     });
+
+
+    // while(a<=20){
+    //   console.log("a is smaller")
+    // }

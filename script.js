@@ -191,3 +191,4 @@ let obj ={
 console.log(obj)
  obj.__proto__=man
 console.log(obj.name)
+

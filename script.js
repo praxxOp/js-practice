@@ -133,9 +133,16 @@ console.log(add)
     return (`Element at index ${index} is ${element}`);
     });
    console.log(hi)
+   //  forEach: Does not return a new array; it simply iterates through an array and 
+  //  performs an action on each element.
+ 
+ 
+ 
+   //  map: Returns a new array created by applying a function to each element in the original array.
 
     const hii=  array.map((element, index) => {
       return (`Element at index ${index} is ${element}`)
        ;
       });
   console.log(hii)
+

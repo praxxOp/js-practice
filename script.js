@@ -146,3 +146,48 @@ console.log(add)
       });
   console.log(hii)
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Example 1: Filter even numbers
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log("Even numbers:", evenNumbers);
+
+// example 2
+const greater = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const filteredArray = greater.filter((val) => {
+  let great = val < 5;
+  console.log(`Value: ${val}, Is it great? ${great}`);
+  return great;
+});
+
+console.log(filteredArray); // Output: [1, 2, 3, 4]
+
+
+const mapArray = greater.map((val) => {
+  let great = val < 5;
+   return great;
+});
+
+console.log(mapArray);
+
+ const addition=greater.reduce((acc,cv)=>{
+return acc+cv;
+},10)
+
+console.log(addition)
+
+
+// objects:-
+let man = {
+  gender : "male"
+}
+
+let obj ={
+  name : "prathamesh",
+  age : 20,
+  surname : "Shelke"
+}
+console.log(obj)
+ obj.__proto__=man
+console.log(obj.name)

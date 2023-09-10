@@ -190,3 +190,22 @@ console.log(func2())
 func1(()=>{
 return higherorderfunc+2;
 })
+
+
+// constructor function
+
+function Constructor(color) {
+  this.shape = "circle";
+  this.width = 12;
+  this.color = color;
+}
+
+const constructor2 = new Constructor("red");
+
+console.log(constructor2);
+
+const button = document.querySelector("Button");
+button.addEventListener("click", function() {
+  console.log(this);
+});
+

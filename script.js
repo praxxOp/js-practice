@@ -15,10 +15,10 @@ let c = [1, 2, 3, 4, 5];
 let d = [...c];
 /* to copy all value of array or object  we use spread [...] operators in js */
 d.push(13);
-d.pop()
-d.unshift(12)
-d.shift()
-d.splice(2,3)
+d.pop();
+d.unshift(12);
+d.shift();
+d.splice(2, 3);
 
 let e = {
   name: "praxx",
@@ -46,27 +46,24 @@ var g = 30;
 /* Hoisting with var:
 var variables are hoisted and initialized with undefined, making them accessible before declaration,
  whereas let and const variables are hoisted but not initialized, leading to ReferenceErrors if accessed before declaration.
-*/ 
+*/
 
 /* conditions in js */
 /*to check single condition*/
-if(a<b){
-console.log("done")
-}
-else{
-    console.log ("not done")
+if (a < b) {
+  console.log("done");
+} else {
+  console.log("not done");
 }
 
 /* to check multiple condition */
 
-if (a>b){
-console.log("greater")
-}
-else if (a<b){
-    console.log("smaller")
-}
-else{
-    console.log("nothing")
+if (a > b) {
+  console.log("greater");
+} else if (a < b) {
+  console.log("smaller");
+} else {
+  console.log("nothing");
 }
 
 // or operator
@@ -81,9 +78,9 @@ if (isRaining || isSunny) {
 }
 
 // ternary operators
-let A = 10
-let B =  12
-a>B?console.log("okay"): console.log("not okay")
+let A = 10;
+let B = 12;
+a > B ? console.log("okay") : console.log("not okay");
 
 // promt
 // var praxx2= Number(prompt("enter the number"))
@@ -94,18 +91,14 @@ a>B?console.log("okay"): console.log("not okay")
 //     console.log ("even")
 // }
 
-for(i=1 ; i<=5;i++){
-console.log("praxx")
+for (i = 1; i <= 5; i++) {
+  console.log("praxx");
 }
-
-
-
-
 
 let k = [1, 2, 3, 4, 5, 6];
 let currentIndex = 0;
 
-document.querySelector("button").addEventListener("click", function() {
+document.querySelector("button").addEventListener("click", function () {
   if (currentIndex < k.length) {
     let val = k[currentIndex];
     let z = val + 2;
@@ -114,37 +107,32 @@ document.querySelector("button").addEventListener("click", function() {
   }
 });
 
-
-
-while(a<=20){
-let add= a++
-console.log(add)
+while (a <= 20) {
+  let add = a++;
+  console.log(add);
 }
 
 // to find currentindex in array
 //In JavaScript, when working with loops like for and forEach, as well as the Array.prototype.map() method,
-//the second parameter in the callback function serves as the index of the current element being processed. 
+//the second parameter in the callback function serves as the index of the current element being processed.
 //This index parameter allows you to access and manipulate both the elements themselves and
 //their corresponding positions within an array during iteration or mapping operations.
 // example:-
 
-    const array = [1, 2, 3, 4, 5];
-   const hi=  array.forEach((element, index) => {
-    return (`Element at index ${index} is ${element}`);
-    });
-   console.log(hi)
-   //  forEach: Does not return a new array; it simply iterates through an array and 
-  //  performs an action on each element.
- 
- 
- 
-   //  map: Returns a new array created by applying a function to each element in the original array.
+const array = [1, 2, 3, 4, 5];
+const hi = array.forEach((element, index) => {
+  return `Element at index ${index} is ${element}`;
+});
+console.log(hi);
+//  forEach: Does not return a new array; it simply iterates through an array and
+//  performs an action on each element.
 
-    const hii=  array.map((element, index) => {
-      return (`Element at index ${index} is ${element}`)
-       ;
-      });
-  console.log(hii)
+//  map: Returns a new array created by applying a function to each element in the original array.
+
+const hii = array.map((element, index) => {
+  return `Element at index ${index} is ${element}`;
+});
+console.log(hii);
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -163,32 +151,42 @@ const filteredArray = greater.filter((val) => {
 
 console.log(filteredArray); // Output: [1, 2, 3, 4]
 
-
 const mapArray = greater.map((val) => {
   let great = val < 5;
-   return great;
+  return great;
 });
 
 console.log(mapArray);
 
- const addition=greater.reduce((acc,cv)=>{
-return acc+cv;
-},10)
+const addition = greater.reduce((acc, cv) => {
+  return acc + cv;
+}, 10);
 
-console.log(addition)
-
+console.log(addition);
 
 // objects:-
 let man = {
-  gender : "male"
+  gender: "male",
+};
+
+let obj = {
+  name: "prathamesh",
+  age: 20,
+  surname: "Shelke",
+};
+console.log(obj);
+obj.__proto__ = man;
+
+console.log(obj.name);
+
+
+// higher order funtion
+let higherorderfunc = 12
+const func1 =(func2)=>{
+console.log(func2())
+
 }
 
-let obj ={
-  name : "prathamesh",
-  age : 20,
-  surname : "Shelke"
-}
-console.log(obj)
- obj.__proto__=man
-console.log(obj.name)
-
+func1(()=>{
+return higherorderfunc+2;
+})

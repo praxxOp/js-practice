@@ -210,3 +210,43 @@ button.addEventListener("click", function() {
 });
 
 
+// this keyword in javascript
+// Global Context: In the global context (outside of any function), 
+// this refers to the global object, which is window in a web browser and global in Node.js.
+console.log(this);
+
+// Function Context: Inside a regular function (not an arrow function), the value of this is determined by how the function is called. 
+// It can be influenced by the caller, the context in which the function is invoked, and whether the function is attached to an object.
+// In regular function
+function abcd(){
+  var v = 2+2
+  console.log(v)
+  console.log(this)
+}
+abcd()
+
+// Method Context: When a function is called as a method of an object, 
+// this refers to the object itself. For example:
+
+let thiskeyword = {
+  name : "prathamesh",
+  age:20,
+  sum: function (){
+    var v = 2+2
+    console.log(v)
+    console.log(this)
+  }
+  
+}
+
+thiskeyword.sum();
+
+// Constructor Context: When a function is used as a constructor to create objects with the new keyword,
+//  this refers to the newly created object:
+function Person(name) {
+  this.name = name;
+  
+}
+
+const john = new Person("John");
+console.log(john.name); // "John"

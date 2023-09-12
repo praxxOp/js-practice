@@ -270,7 +270,7 @@ function abcd (name,age,height){
 }
 
 let prathamesh = new abcd("prathamesh",20,6)
-let rohan = new abcd("rohan",20,6)
+let rohan = new abcd("rohan",20,6);
 console.log(rohan)
 console.log(prathamesh)
 

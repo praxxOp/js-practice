@@ -248,7 +248,7 @@ function Person(name) {
   
 }
 const john = new Person("John");
-console.log(john.name); // "John"
+console.log(john.name); 
 
 
 
@@ -260,3 +260,19 @@ axios.get('https://jsonplaceholder.typicode.com/posts/1')
   .catch((error) => {
     console.error('Error:', error);
   });
+
+
+
+function abcd (name,age,height){
+   this.name = name,
+  this.age = age,
+  this.height = height
+}
+
+let prathamesh = new abcd("prathamesh",20,6)
+let rohan = new abcd("rohan",20,6)
+console.log(rohan)
+console.log(prathamesh)
+
+
+

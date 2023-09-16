@@ -55,6 +55,6 @@ button{
 .sidebuttons{
     display: flex;
     gap: 50px;
-    font-size: 2vw;
+    font-size: 2vw; 
     cursor: pointer;
 }

@@ -275,7 +275,27 @@ console.log(rohan)
 console.log(prathamesh )
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  let nowIndex = 1;
+  let boxes = document.querySelectorAll(".box");
+  let prevButton = document.querySelector(".prev");
+  let nextButton = document.querySelector(".next");
 
+  prevButton.addEventListener("click", function () {
+    if (nowIndex > 0) {
+      boxes[nowIndex].classList.remove("scaled");
+      nowIndex -= 1;
+      boxes[nowIndex].classList.add("scaled"); 
+    }
+  });
 
+  nextButton.addEventListener("click", function () {
+    if (nowIndex < boxes.length - 1) {
+      boxes[nowIndex].classList.remove("scaled"); 
+      nowIndex += 1;
+      boxes[nowIndex].classList.add("scaled"); 
+    }
+  });
+});
 
 

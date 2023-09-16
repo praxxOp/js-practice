@@ -5,3 +5,56 @@ button{
     color: white;
    cursor: pointer;
 }
+.mainbody{
+    height: 80vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main{
+    height: 400px;
+    width: 900px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px ;
+    background-color: aqua;
+    
+        transition: transform 0.3s ease-in-out, z-index 0.1s;
+       
+      
+     
+}
+.scaled {
+    transform: scale(2);
+    z-index: 1;
+  }
+#mid{
+   
+    background-color: rgb(199, 18, 18);
+    
+}
+#left{
+    background-color: blue;
+}
+#right{
+    background-color: cadetblue;
+}
+
+.sidebuttons{
+    display: flex;
+    gap: 50px;
+    font-size: 2vw;
+    cursor: pointer;
+}

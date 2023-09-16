@@ -275,7 +275,7 @@ console.log(rohan)
 console.log(prathamesh )
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
   let nowIndex = 1;
   let boxes = document.querySelectorAll(".box");
   let prevButton = document.querySelector(".prev");
@@ -296,6 +296,6 @@ document.addEventListener("DOMContentLoaded", function () {
       boxes[nowIndex].classList.add("scaled"); 
     }
   });
-});
+
 
 
